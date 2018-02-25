@@ -1,0 +1,133 @@
+/* Styling our own way */
+
+*{
+	font-family:"Times New Roman", Times, serif;
+}
+
+
+body {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+p {
+  padding: 5px;
+  font-family:"Times New Roman", Times, serif;
+  font-size: 18px;
+	color:black;
+}
+
+/* Main */
+.main h2 {
+  font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 28px ;
+}
+
+.main h3 {
+  font-family: "Times New Roman", Times, serif;
+	font-size: 24px ;
+}
+
+.main .container {
+  padding-top: 50px;
+}
+
+.row {
+  margin: 60px 0;
+  padding: 40px 80px;
+}
+
+/* Landing page */
+.jumbotron {
+	height: 600px;
+}
+
+.jumbotron h1 {
+  margin-top: 200px;
+  font-family: "Times New Roman", Times, serif;
+	font-size: 40px ;
+}
+
+.jumbotron p {
+  margin-top: 180px;
+	font-size: 18px ;
+}
+
+#quote {
+	color: blue;
+}
+#title {
+	color: black;
+}
+
+#landingPage {
+  background-image: url("images/landingimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Navigation bar */
+.navbar a, .nav a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #75a8ce;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #9fbbd0;
+}
+.active {
+    background-color: #1e7abf;
+}
+
+/* Testimonies and FAQs sections */
+.row img, .img-circle, .img-responsive {
+  height: 200px;
+  width: 200px;
+	color: grey;
+}
+
+.row .pull-right {
+  margin: 0 0 10px 20px;
+}
+
+.row .pull-left {
+  margin: 0 20px 10px 0;
+}
+.main .container.testimonies {
+	background-color:grey;
+}
+
+
+/* Footer */
+footer {
+  padding: 10px 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  background-color: #9fbbd0;
+  color: white;
+}

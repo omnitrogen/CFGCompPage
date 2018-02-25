@@ -1,66 +1,142 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
+  <title> Mr. mAd </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Our stylesheet-->
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <!--Bootstrap CSS style-->
+  <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+
 </head>
+
 <body>
-  <h1>Mr. mAd</h1>
-  <h2>Your personal medication adherence assistant</h2>
 
-<div class="nav">
-  List of pages
-  <ul>
-    <li>About me</li>
-    <li>The team</li>
-    <li>The research</li>
-    <li>Register your interest</li>
-  </ul>
-</div>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+   <a class="navbar-brand" href="./index.html"> <img alt="Mr. mAd" src="./images/App.png" style="max-width:80px"></a>
+   <button aria-controls="navbar" aria-expanded="false" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="navbar-collapse collapse" id="navbar">
+     <ul>
+       <li class="nav-item"><a class="nav-link" href="./aboutme.html">  About me  </a> </li>
+       <li class="nav-item"><a class="nav-link" href="./theteam.html">  The team  </a></li>
+      <li class="nav-item"><a class="nav-link" href="./theresearch.html">  The research  </a></li>
+      <li style="float:right"><a class="active" href="./registeryourinterest.html">  Register your interest  </a></li>
+     </ul>
+   </div>
+  </nav>
 
-<div class="Intro">
-  (insert bot image)
-  <!-- Format: the bot image on the left with brief description alongside
-  and 'sign-up button', as well as arrow to scroll down for more information-->
-  <!-- Intro text:-->
-  Hi! I'm Mr. MAd, I'm a ChatBot that helps you take your medication! <br>
-  <!-- Button -->
-  "Tell me more!"
-  (Down Arrove image)
-</div>
+  <header>
+      <div id="landingPage" class="jumbotron text-center">
+          <h1 id="title">Mr. mAd</h1>
+          <h2 id="subtitle">Your personal medication adherence assistant</h2>
+        </div>
+  </header>
 
-<div class="features">
+<div class="main">
+  <div class="container text-center" id="intro">
+    <h2> Introduction <h2>
+      <div class="row">
+        <p> (insert image)
+        <!-- Format: the bot image on the left with brief description alongside
+        and 'sign-up button', as well as arrow to scroll down for more information-->
+        <!-- Intro text:-->
+        Hi! I'm Mr. MAd, I'm a ChatBot that helps you take your medication!
+        <!-- Button -->
+        "Tell me more!"
+         </p>
+ </div>
+</div> <!-- Introduction div is now closed -->
+
+
+<div class="container" id="features">
   <!-- Format: center photo with a screenshot of the chatscreen with
   feature descriptions on either side -->
-  <oL class="featuresleft">
-    <li><h3>I'm on Messenger</h3><br>
-      No need to download a separate app, find me on Facebook Messenger!</li>
-    <li><h3>I'm build by Doctors and Medical Students</h3><br>
-      Don't worry, I know what I'm doing. I was trained by Doctors and Medical Students</li>
-    <li><h3>I'm super interesting</h3></br>
-      Say goodbye to the boring notifications. I'll just message you when it's time to take your medication.</li>
-  </ol>
-  <ol class="featuresright">
-    <li><h3>Personalise me!</h3>
-      Choose the most effective way for me to remind you to take your medication</li>
-    <li><h3>I'm super positive</h3>
-      I'll be encouraging you all along the way!</li>
-  </ol>
-</div>
+  <h2 class="text-center"> Features </h2>
+  <ul class="text-left">
+    <li><h3>1) I'm on Messenger</h3><br>
+      <p>No need to download a separate app, find me on Facebook Messenger!<p></li>
+    <li><h3>2) I'm build by Doctors and Medical Students</h3><br>
+      <p>Don't worry, I know what I'm doing.</p>
+      <p>I was trained by Doctors and Medical Students. </p> </li>
+    <li><h3>3) I'm super interesting</h3></br>
+      <p>Say goodbye to the boring notifications.</p>
+      <p>I'll just message you when it's time to take your medication.</p></li>
+  </ul>
 
-<div>
-<p>
+  <ul class="text-right">
+    <li><h3>4) Personalise me!</h3>
+      <p>Choose the most effective way for me to remind you to take your medication.</p></li>
+    <li><h3>5) I'm super positive</h3>
+      <p>I'll be encouraging you all along the way!</p></li>
+  </ul>
 
-</p>
-
-<div class="testimonies">
-  patient quotes
-</div>
-
-<div>
-  <h2>FAQs</h2>
-</div>
+  <img class="img-responsive text-center" src="images/App_screen.png"/>
+</div> <!-- Features div is now closed -->
 
 
+<div class="container" id="testimonies">
+  <h2 class="text-center"> Patient testimonies </h2>
+  <div class="row bg-info" id="quote">
+    <img class="img-circle img-responsive pull-left" src="images/picture1.jpg"/>
+    <p class="text-right"> First quote from patient 1 </p>
+  </div>
+  <div class="row bg-info" id="quote">
+    <img class="img-circle img-responsive pull-right" src="images/picture2.jpg"/>
+    <p class="text-left"> Second quote from patient 2</p>
+  </div>
+  <div class="row bg-info" id="quote">
+    <img class="img-circle img-responsive pull-left" src="images/picture3.jpg"/>
+    <p class="text-right"> Third quote from patient 3 </p>
+  </div>
+</div> <!-- Testimonies div is now closed -->
 
+
+
+<div class="container" id="FAQs">
+  <h2 class="text-center"> FAQs </h2>
+  <div class="row bg-success" id="question1">
+    <p class="text-left">
+      "First question"
+    </p>
+    <p class="text-left">
+      "First answer"
+    </p>
+  </div>
+
+  <div class="row bg-success" id="question2">
+    <p class="text-left">
+      "Second question"
+    </p>
+    <p class="text-left">
+      "Second answer"
+    </p>
+  </div>
+
+  <div class="row bg-success" id="question3">
+    <p class="text-left">
+      "Third question"
+    </p>
+    <p class="text-left">
+      "Third answer"
+    </p>
+  </div>
+
+</div> <!-- FAQs div is now closed -->
+
+<footer class="text-center">
+      This website was created by Rachel Lee and Agathe Defrance
+    </footer>
+
+<!-- jQuery library
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+-->
 </body>
 </html>
