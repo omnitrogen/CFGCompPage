@@ -134,6 +134,9 @@ li a:hover {
   margin-right: auto;
 }
 
+#features-text {
+  background-color: #75a8ce;
+}
 
 /* Footer */
 footer {
