@@ -64,7 +64,7 @@ p {
 }
 
 #landingPage {
-  background-image: url("images/landingimage.jpg");
+  background-image: url("../images/landingimage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,6 +120,18 @@ li a:hover {
 }
 .main .container.testimonies {
 	background-color:grey;
+}
+
+
+/* iphone pic resize and center */
+#iphone-chat {
+  display: block;
+  max-width:40%;
+  max-height:40%;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
